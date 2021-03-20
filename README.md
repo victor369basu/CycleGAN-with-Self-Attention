@@ -4,8 +4,11 @@
 In this repository, I have developed a CycleGAN architecture with embedded Self-Attention Layers, that could solve three different complex tasks. Here the same principle Neural Network architecture has been used to solve the three different task. Although truth be told, my model has not exceeded any state of the art performances for the given task, but the architecture was powerful enough to understand the task that has been given to solve and produce considerably good results.
 
 # About the architecture
-The concept of CycleGAN used in this project is the same as the original. The novel approach that I have added is adding the self-attention layers to the U-net generator and discriminator. The concept of self attention is inspired from the research paper <a href="https://arxiv.org/pdf/1805.08318v2.pdf">Self-Attention Generative Adversarial Networks</a>. I have modified the self-attention layer discussed in the research paper for better results. In my case, the base formula for attention is shown below.
+The concept of CycleGAN used in this project is the same as the original. The novel approach that I have added is adding the self-attention layers to the U-net generator and discriminator. The concept of self attention is inspired from the research paper <a href="https://arxiv.org/pdf/1805.08318v2.pdf">Self-Attention Generative Adversarial Networks</a>. I have modified the self-attention layer discussed in the research paper for better results. In my case, the base formula for attention is shown below.<br>
+
 <img align="center" alt="attention" src="./images/att.png" />
+Source - <a href="https://arxiv.org/pdf/1706.03762.pdf">Attention Is All You Need</a><br>
+
 The base code for the self-attention layer is built around this formula. The self-attention layers added at the bottleneck of the u-net and right before the output Convolution Layer. In the case of the discriminator, the self-attention layers are added right before the zero-padding layer and right before the output layer.
 
 ## Technologies used:
