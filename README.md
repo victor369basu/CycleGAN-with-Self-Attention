@@ -6,7 +6,7 @@ In this repository, I have developed a CycleGAN architecture with embedded Self-
 # About the architecture
 The concept of CycleGAN used in this project is the same as the original. The novel approach that I have added is adding the self-attention layers to the U-net generator and discriminator. The concept of self attention is inspired from the research paper <a href="https://arxiv.org/pdf/1805.08318v2.pdf">Self-Attention Generative Adversarial Networks</a>. I have modified the self-attention layer discussed in the research paper for better results. In my case, the base formula for attention is shown below.<br>
 
-<img align="center" alt="attention" src="./images/att.png" />
+<img align="center" alt="attention" src="./images/attention.png" />
 Source - <a href="https://arxiv.org/pdf/1706.03762.pdf">Attention Is All You Need</a><br>
 
 The base code for the self-attention layer is built around this formula. The self-attention layers added at the bottleneck of the u-net and right before the output Convolution Layer. In the case of the discriminator, the self-attention layers are added right before the zero-padding layer and right before the output layer.
