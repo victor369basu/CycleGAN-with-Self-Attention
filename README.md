@@ -1,5 +1,6 @@
-# CycleGAN with Self-Attention Layer
+# CycleGAN with Self-Attention Layers
 <img align="center" alt="architecture" src="./images/Generator.png" /><br>
+
 In this repository, I have developed a CycleGAN architecture with embedded Self-Attention Layers, that could solve three different complex tasks. Here the same principle Neural Network architecture has been used to solve the three different task. Although truth be told, my model has not exceeded any state of the art performances for the given task, but the architecture was powerful enough to understand the task that has been given to solve and produce considerably good results.
 
 # About the architecture
@@ -133,10 +134,10 @@ have improved the outcomes of the model for solving a particular individual case
 # CycleGAN with attention Architecture
 The Self-Attention layer has been used in both generator and discriminator network.
 ## Generator
-<img align="center" alt="gen" src="./images/Glass/gen.png" />
+<img align="center" alt="gen" src="./images/gen.png" />
 
 ## Discriminator
-<img align="center" alt="dis" src="./images/Glass/dis.png" />
+<img align="center" alt="dis" src="./images/dis.png" />
 
 # Future Scopes
 
