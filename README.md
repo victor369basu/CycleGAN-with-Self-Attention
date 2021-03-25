@@ -146,5 +146,6 @@ The Self-Attention layer has been used in both generator and discriminator netwo
 
 # Future Scopes
 
-The model could be further improved with the further turning of Convolution layers or other layers. Creating a deeper u-net architecture could also have helped in improving the performance of the model.
+1. The model could be further improved with the further turning of Convolution layers or other layers. 
+2. Creating a deeper u-net architecture could also have helped in improving the performance of the model.
 
