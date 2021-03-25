@@ -21,8 +21,10 @@ The base code for the self-attention layer is built around this formula. The sel
 I have trained and validated the model with an image size of 256 and trained over 800 epochs. The default parameters mentioned in the config.py file are the baseline parameters used for training over three different tasks.
 
 ## Colorize Sketch
-The given task is to colorize a input facial sketch image.<br>
-Over Training examples<br>
+The given task is to colorize a input facial sketch image.
+<br>
+<strong>Over Training examples</strong>
+<br>
 <img align="center" alt="sketch1" src="./images/Sketch/sketch1.png" />
 <img align="center" alt="sketch2" src="./images/Sketch/sketch2.png" />
 <img align="center" alt="sketch3" src="./images/Sketch/sketch3.png" />
@@ -33,7 +35,9 @@ Over Training examples<br>
 <img align="center" alt="sketch8" src="./images/Sketch/sketch8.png" />
 <img align="center" alt="sketch9" src="./images/Sketch/sketch9.png" />
 <img align="center" alt="sketch10" src="./images/Sketch/sketch10.png" />
-<br>Over Validation examples<br>
+<br>
+<strong>Over Validation examples</strong>
+<br>
 <img align="center" alt="sketchx" src="./images/Sketch/sketchx.jpg" />
 <img align="center" alt="sketchy" src="./images/Sketch/sketchy.jpg" />
 <img align="center" alt="sketch11" src="./images/Sketch/sketch11.png" />
@@ -52,8 +56,10 @@ Over Training examples<br>
 <img align="center" alt="sketch24" src="./images/Sketch/sketch24.png" />
 
 ## Gender Bender
-The given task is to Transform a Male face into a female face.<br>
-Over Training examples<br>
+The given task is to Transform a Male face into a female face.
+<br>
+<strong>Over Training examples</strong>
+<br>
 <img align="center" alt="gender1" src="./images/Gender/gender1.png" />
 <img align="center" alt="gender2" src="./images/Gender/gender2.png" />
 <img align="center" alt="gender3" src="./images/Gender/gender3.png" />
@@ -64,7 +70,9 @@ Over Training examples<br>
 <img align="center" alt="gender8" src="./images/Gender/gender8.png" />
 <img align="center" alt="gender9" src="./images/Gender/gender9.png" />
 <img align="center" alt="gender10" src="./images/Gender/gender10.png" />
-<br>Over Validation examples<br>
+<br>
+<strong>Over Validation examples</strong>
+<br>
 <img align="center" alt="gender11" src="./images/Gender/gender11.png" />
 <img align="center" alt="gender12" src="./images/Gender/gender12.png" />
 <img align="center" alt="gender13" src="./images/Gender/gender13.png" />
@@ -86,7 +94,8 @@ Over Training examples<br>
 
 ## Shades and Glass Remover
 The given task is to remove glass and sun-glass from an input facial image. While training the model to solve this task the alpha parameter of LeakyReLU was set to 0.4 instead of the default 0.1 for the above two tasks.<br>
-Over Training examples<br>
+<strong>Over Training examples</strong>
+<br>
 <img align="center" alt="glass1" src="./images/Glass/glass1.png" />
 <img align="center" alt="glass2" src="./images/Glass/glass2.png" />
 <img align="center" alt="glass3" src="./images/Glass/glass3.png" />
@@ -97,7 +106,9 @@ Over Training examples<br>
 <img align="center" alt="glass8" src="./images/Glass/glass8.png" />
 <img align="center" alt="glass9" src="./images/Glass/glass9.png" />
 <img align="center" alt="glass10" src="./images/Glass/glass10.png" />
-<br>Over Validation examples<br>
+<br>
+<strong>Over Validation examples</strong>
+<br>
 <img align="center" alt="glass11" src="./images/Glass/glass11.png" />
 <img align="center" alt="glass12" src="./images/Glass/glass12.png" />
 <img align="center" alt="glass13" src="./images/Glass/glass13.png" />
@@ -121,6 +132,8 @@ python main.py --height 256 --width 256 --epoch 300 --dataset "./dataset/" --sub
 ```
 python main.py --train False --dataset "./validate/" --validate "face-1001.png" --subject 1
 ```
+Saves the predicted image with the name "Gan_Output_face-1001.png".
+
 # Special cases
 As I have mentioned above the a principle architecture thave solved all three tasks, but I have also found out that modifying the self-attention layer architecture by 
 ```python
@@ -144,5 +157,6 @@ The Self-Attention layer has been used in both generator and discriminator netwo
 
 # Future Scopes
 
-The model could be further improved with the further turning of Convolution layers or other layers. Creating a deeper u-net architecture could also have helped in improving the performance of the model.
+1. The model could be further improved with the further turning of Convolution layers or other layers. 
+2. Creating a deeper u-net architecture could also have helped in improving the performance of the model.
 
