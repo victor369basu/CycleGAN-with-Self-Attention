@@ -121,6 +121,8 @@ python main.py --height 256 --width 256 --epoch 300 --dataset "./dataset/" --sub
 ```
 python main.py --train False --dataset "./validate/" --validate "face-1001.png" --subject 1
 ```
+Saves the predicted image with the name "Gan_Output_face-1001.png".
+
 # Special cases
 As I have mentioned above the a principle architecture thave solved all three tasks, but I have also found out that modifying the self-attention layer architecture by 
 ```python
