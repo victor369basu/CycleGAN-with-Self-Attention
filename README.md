@@ -1,5 +1,5 @@
 # CycleGAN with Self-Attention Layers
-<img align="center" alt="architecture" src="./images/Generator.png" /><br>
+<img align="center" alt="architecture" src="./images/Generator.png" style="background-color:white"/><br>
 
 In this repository, I have developed a CycleGAN architecture with embedded Self-Attention Layers, that could solve three different complex tasks. Here the same principle Neural Network architecture has been used to solve the three different tasks such as Colorize sketch, shader and glass remover and turning male face to female. Although truth be told, my model has not exceeded any state of the art performances for the given task, but the architecture was powerful enough to understand the task that has been given to solve and produce considerably good results.
 
